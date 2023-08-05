@@ -11,11 +11,5 @@ public class wlc
           ek sa jayda word ka print kar saka */
         System.out.println("Welcome "+name);
         sc.close();
-    }
-
-
-
-
-
-    
+    }    
 }
