@@ -1,5 +1,5 @@
 import java.util.*;
-public class matching_meta
+public class stuchallengestring1
 {
     public static void main(String[] args) 
     {
