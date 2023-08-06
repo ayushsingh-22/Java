@@ -1,16 +1,11 @@
-import java.util.Scanner;
-public class test
+import java.util.*;
+public class matching_meta
 {
-    public static void main (String[] Args)
+    public static void main(String[] args) 
     {
-        Scanner sc=new Scanner (System.in);
-        int l,b,a;
-        System.out.print("Enter length of rectangle = ");
-        l=sc.nextInt();
-        System.out.println();
-        System.out.print("Enter breath of rectangle = ");
-        b=sc.nextInt();
-        a = l*b;
-        System.out.print("Area of rectangle = "+a);
+        Scanner sc = new Scanner(System.in);
+        String str ="fn";
+        
+        System.out.println(str.matches("[fun]"));
     }
 }

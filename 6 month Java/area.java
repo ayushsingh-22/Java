@@ -1,17 +1,17 @@
 import java.util.Scanner;
 public class area
 {
-    // public static void main (String [] args)
-    // {
-    //     Scanner sc=new Scanner(System.in);
-    //     float b,h;
-    //     System.out.print("Enter height = ");
-    //     h = sc.nextFloat();
-    //     System.out.print ("Enter breath = ");
-    //     b=sc.nextFloat();
-    //     float area=(0.5f)*(b*h);
-    //     System.out.print("Area of triangle = "+ area);
-    // }
+    public static void main (String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        float b,h;
+        System.out.print("Enter height = ");
+        h = sc.nextFloat();
+        System.out.print ("Enter breath = ");
+        b=sc.nextFloat();
+        float area=(0.5f)*(b*h);
+        System.out.print("Area of triangle = "+ area);
+    }
 
     // public static void main(String[] args) 
     // {
@@ -30,18 +30,18 @@ public class area
     //     System.out.println("Area of scaler triangle = "+area);
     // }
 
-    public static void main(String[] args) 
-    {
-        Scanner sc=new Scanner(System.in);
-        double a,b,c,r1,r2;
-        System.out.print("Enter value of a, b & c = ");
-        a=sc.nextFloat();
-        b=sc.nextFloat();
-        c=sc.nextFloat();
-        r1=((-b)+ (Math.sqrt((b*b)-4*a*c)))/(2*a);
-        r2=((-b)- (Math.sqrt((b*b)-4*a*c)))/(2*a);
-        System.out.println("Root of given function = "+r1);
-        System.out.println("Root of given function = "+r2);
+    // public static void main(String[] args) 
+    // {
+    //     Scanner sc=new Scanner(System.in);
+    //     double a,b,c,r1,r2;
+    //     System.out.print("Enter value of a, b & c = ");
+    //     a=sc.nextFloat();
+    //     b=sc.nextFloat();
+    //     c=sc.nextFloat();
+    //     r1=((-b)+ (Math.sqrt((b*b)-4*a*c)))/(2*a);
+    //     r2=((-b)- (Math.sqrt((b*b)-4*a*c)))/(2*a);
+    //     System.out.println("Root of given function = "+r1);
+    //     System.out.println("Root of given function = "+r2);
 
-    }
+    // }
 }
