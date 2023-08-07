@@ -1,1 +1,0 @@
- {System.out.printf("%d is not leap year.",yr);}
