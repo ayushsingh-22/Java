@@ -39,5 +39,6 @@ public class stringprac
         int month=sc.nextInt();
 
         System.out.printf("Hellow %s! Congo to complete %s in %d month.",nme,lan,month);
+        
         }
 }
