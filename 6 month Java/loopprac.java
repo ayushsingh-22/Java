@@ -60,16 +60,82 @@ public class loopprac
 
         // count digit of number;
 
-        System.out.print("Enter number = ");
-        int n=sc.nextInt();
-        int i=0;
+        // System.out.print("Enter number = ");
+        // int n=sc.nextInt();
+        // int temp = n; 
+        // int i=0;
 
-        while(n>0)
+        // while(n>0)
+        // {
+        //     n=n/10;
+        //     i++;
+        // }
+        // System.out.printf("Total number of digit in %d is %d",temp,i);
+
+        // find 3 digit armstrong number;
+
+        // System.out.print("Enter digit = ");
+        // int digit=sc.nextInt();
+        // int tempa = digit;
+        // int sum=0;
+
+        // while(digit>0)
+        // {
+        //     int rem=digit%10;
+        //     digit=digit/10;
+        //     sum=(rem*rem*rem)+sum;
+        // }
+
+        // if (sum == tempa)
+        // {System.out.printf("%d is amstrong number.",tempa);}
+        // else{System.out.printf("%d is not amstrong number.",tempa);}
+
+        // print reverse of given digit.
+
+        // System.out.print("Enter number = ");
+        // int orig=sc.nextInt();
+        // int tamp=orig;
+
+        // System.out.printf("Reverse digit of %d is ",orig);
+        // while(orig>0)
+        // {
+        //     int re=orig%10;
+        //     System.out.print(re);
+        //     orig=orig/10;
+        // }
+
+        // palindrome or not
+
+        // System.out.print("Enter number = ");
+        // int pal=sc.nextInt();
+        // int ran=pal;
+        // int temp=0;
+       
+        // while(pal>0)
+        // {
+        //     int rem=pal%10;
+        //     temp=temp*10+rem;
+        //     pal=pal/10;
+        // }
+        // System.out.println("Reversed number = "+temp);
+
+        // if(ran==temp)
+        // {System.out.println("Palindrome Number.");}
+        // else
+        // {System.out.println("Not Palindrome Number.");}
+
+        // display no. in words with tailling zero if present
+
+        System.out.print("Enter number = ");
+        String str=sc.next();
+        String rev="";
+
+        for(int i=str.length()-1;i>=0;i--)
         {
-            n=n/10;
-            i++;
+            rev=rev+str.charAt(i);
         }
-        System.out.printf("Total number of digit in %d is %d",n,i);
+
+        System.out.println("Reversed digit = "+rev);
 
 
     }
