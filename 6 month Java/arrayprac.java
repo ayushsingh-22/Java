@@ -132,9 +132,9 @@ public class arrayprac
             a[i]=a[i+1];
         }
 
-        for(int m:a)
+       for(int i=0;i<a.length-1;i++)
         {
-            System.out.print(m+", ");
+            System.out.print(a[i]+", ");
         }
     } 
 }
