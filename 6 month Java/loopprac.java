@@ -190,7 +190,7 @@ public class loopprac
     */
 
         // Fibonacci series;
-
+    /*
         System.out.print("Enter number of term = ");
         int n=sc.nextInt(); 
         int a=0;
@@ -205,6 +205,7 @@ public class loopprac
             a=b;
             b=c;
         }
+     */    
 
     }
 }
