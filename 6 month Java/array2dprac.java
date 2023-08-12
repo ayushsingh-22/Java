@@ -1,5 +1,5 @@
 import java.util.*;
-public class arraydprac
+public class array2dprac
 {
     public static void main(String[] args) 
     {
