@@ -74,6 +74,7 @@ public class arrayprac
 
         // reverse an array
 
+        /*
         int m[]= new int[6];
         m[1]=2; m[0]=10; m[2]=13; m[3]=9; m[4]=15; m[5]=4;
         
@@ -100,6 +101,46 @@ public class arrayprac
         {
             System.out.print(x+", ");
         }
+        */
+
+        // maximum and minimum in array
+
+        /*
+        int g[]={21,33,44,107,5,2};
+        int max=g[0];
+        int min=g[0];
+        for(int x:g)
+        {
+            if(x>max)
+            {
+                max=x;
+            }
+        }
+        System.out.println("Maximum value = "+max);
+
+        for(int x:g)
+        {
+            if(x<min)
+            {
+                min=x;
+            }
+        }
+        System.out.println("Minimum value = "+min);
+        */
+
+        // array sorted or not
+
+        int g[]={21,33,44,107,5,2};
+
+        for (int i = 1; i < g.length; i++) {
+            if (g[i] < g[i - 1]) 
+            {
+               continue;
+            }
+        }
+        System.out.println("Is sortedArray sorted. " );
+        
+
 
     }
     
