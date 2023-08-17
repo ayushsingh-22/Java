@@ -138,7 +138,7 @@ public class arrayprac
                continue;
             }
         }
-        System.out.println("Is sortedArray sorted. " );
+        System.out.println(" Is sortedArray sorted. " );
         
 
 
