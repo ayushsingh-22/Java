@@ -11,6 +11,7 @@ public class area
         b=sc.nextFloat();
         float area=(0.5f)*(b*h);
         System.out.print("Area of triangle = "+ area);
+        sc.close();
     }
 
     // public static void main(String[] args) 

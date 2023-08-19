@@ -12,7 +12,7 @@ public class Solution {
             System.out.printf("%d x %d = %d\n",N,i,N*i);
             
         }
-           
+        sc.close(); 
     }
 }
 

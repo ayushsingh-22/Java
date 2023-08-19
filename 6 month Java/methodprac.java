@@ -26,6 +26,7 @@ public class methodprac
 
             System.out.println("Original value of a " + a);
             System.out.println("Updated value of a " + great(a, b));
+            sc.close();
 
         }
      */
@@ -85,6 +86,7 @@ public class methodprac
         int x=10; 
         change(x,20);
         System.out.println("Value of x = "+x);
+        
     }
     
 }

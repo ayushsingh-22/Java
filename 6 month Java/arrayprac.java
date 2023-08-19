@@ -136,5 +136,6 @@ public class arrayprac
         {
             System.out.print(a[i]+", ");
         }
+        sc.close();
     } 
 }

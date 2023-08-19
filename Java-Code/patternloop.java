@@ -21,6 +21,7 @@ public class patternloop
             }
         System.out.println("");
         }
+        sc.close();
     }
     
 }

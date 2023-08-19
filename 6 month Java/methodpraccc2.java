@@ -1,7 +1,7 @@
 import java.util.*;
 public class methodpraccc2
 {
-    static boolean prime(int n)
+    static boolean primechek(int n)
     {
         for (int i=2; i<n/2;i++)
         {
@@ -19,8 +19,9 @@ public class methodpraccc2
         System.out.print("Enter no.: ");
         int noo = sc.nextInt();
 
-        boolean res = prime(noo);
-        System.out.println("Given value is prime ?? ----> "+ res);
+        boolean res = primechek(noo);
+        System.out.println("Given value is prime ----> "+ res);
         
+        sc.close();
     }
 }

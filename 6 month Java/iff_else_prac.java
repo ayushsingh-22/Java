@@ -143,7 +143,7 @@ public class iff_else_prac
                     System.out.printf("Warning! Invalid entry");
                     break;
             }
-
+            sc.close();
 
 
 

@@ -7,5 +7,6 @@ public class welcome
         System.out.print("May I known your name ");
         String a = sc.nextLine();
         System.out.println("Welcome "+a);
+        sc.close();
     }
 }

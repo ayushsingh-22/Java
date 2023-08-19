@@ -57,6 +57,7 @@ public class array2dprac
         }
         System.out.println();
     }
+    sc.close();
     
 }
 }
