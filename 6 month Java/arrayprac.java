@@ -4,6 +4,7 @@ public class arrayprac
     public static void main(String[] args) 
     {
         Scanner sc=new Scanner(System.in);
+
         // Sum of elemrnt of array
     /*     
         int A[]={3,9,7,8,11,12,16,20,5,13};
@@ -71,7 +72,7 @@ public class arrayprac
         System.out.println("Second maximum is "+max2);
     */
 
-    /* 
+    
         // rotate an array
 
         int a[]={14,45,23,64,41,60,12,37};
@@ -98,7 +99,7 @@ public class arrayprac
         {
             System.out.print(x+", ");
         }
-    */
+    
         
 
         //  inserting element in array
@@ -121,7 +122,7 @@ public class arrayprac
     */
 
         // deleteing an array
-
+        /*
         int a[]={14,45,23,64,41,60,12,37};
 
         System.out.print("Enter index: ");
@@ -136,6 +137,7 @@ public class arrayprac
         {
             System.out.print(a[i]+", ");
         }
+        */
         sc.close();
     } 
 }
