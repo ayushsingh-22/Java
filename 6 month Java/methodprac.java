@@ -29,7 +29,8 @@ public class methodprac
 
         }
      */
-
+    
+     /*
     static void update (int a[])
      {
         a[8]=25;
@@ -54,7 +55,36 @@ public class methodprac
         {
             System.out.print(x+", ");
         }
-    
+    }
+    */
+
+    static void change(int y, int value)
+    {
+        y=value;
+    }
+
+    static void update (int a[], int index, int valu)
+     {
+        a[index]=valu;
      }
+
+     public static void main(String[] args) 
+     {
+        int a[]=new int[10];
+        a[0]=1; a[1]=14;a[3]=8;
+
+        update(a,4,63);
+        System.out.println();
+        System.out.print("Updated array = ");
+        for(int x:a)
+        {
+            System.out.print(x+", ");
+        }
+
+        System.out.println();
+        int x=10; 
+        change(x,20);
+        System.out.println("Value of x = "+x);
+    }
     
 }
