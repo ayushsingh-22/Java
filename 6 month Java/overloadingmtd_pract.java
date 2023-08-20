@@ -47,6 +47,7 @@ public class overloadingmtd_pract
     }
     */
 
+    /* 
     static int reverse(int n) 
     {
         int reversed = 0;
@@ -70,7 +71,6 @@ public class overloadingmtd_pract
     
     } 
 
-
     public static void main(String args[]) 
     {
         int m[]={3,10,8,9,12,41};
@@ -87,6 +87,28 @@ public class overloadingmtd_pract
         {
             System.out.print(num + ", ");
         }
+    }
+    */
+
+    static boolean valid(String name )
+    { 
+        return name.matches("[\\Sa-zA-Z\\s]+");
+     
+    }
+    static boolean valid(int age )
+    { 
+        return age>3 && age<10;
+     
+    }
+
+    public static void main(String[] args) 
+    {
+        
+        //String nam="ayush KUMAR";
+        int age=25;
+        boolean legal=valid(age);
+        System.out.println(legal);
+
     }
 
 }
