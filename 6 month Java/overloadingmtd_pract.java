@@ -57,16 +57,15 @@ public class overloadingmtd_pract
         }
         return reversed;
     }
-    static int reverse(int a[])
+    static void reverse(int a[])
     {
-        int temp=a[0];
-        
-        for(int i=a.length-1; i>=0;i--)
+        for(int i=0; i<(a.length/2);i++)
         {
-            a[i]=a[a.length-1];
+            int temp = a[i];
+            a[i] = a[a.length - i - 1];
+           a[a.length - i - 1] = temp;
     
         }
-        a[a.length-1]=temp;
         return;
     
     } 
@@ -74,11 +73,20 @@ public class overloadingmtd_pract
 
     public static void main(String args[]) 
     {
-        int m[]={3,10,8,9,41};
+        int m[]={3,10,8,9,12,41};
+        System.out.print("\nOriginal Array: ");
+        for (int num : m) 
+        {
+            System.out.print(num + ", ");
+        }
 
-        int n=reverse(m);
-        for(int x:m)
-        System.out.print((x+", "));
+        reverse(m);
+
+        System.out.print("\nReversed Array: ");
+        for (int num : m) 
+        {
+            System.out.print(num + ", ");
+        }
     }
 
 }
