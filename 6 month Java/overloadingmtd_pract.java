@@ -14,9 +14,9 @@ public class overloadingmtd_pract
 
     public static void main(String[] args) 
     {
-        int a=15;
-        int b= 33;
-        System.out.println("Maximum between a & b is "+over(a,b));
+        float a = 15.2f;
+        float b = 33.3f;
+        System.out.println("Maximum between a & b = "+over(a,b));
         
     }
     */
@@ -113,7 +113,7 @@ public class overloadingmtd_pract
     }
     */
 
-    
+    /* 
     static int max(int ...a)
     {
         int m = a[0];
@@ -134,9 +134,27 @@ public class overloadingmtd_pract
 
     public static void main(String[] args) 
     {
-        int s = max(0,11,5,10,0,25,12);
+        int s = max(0,20,55,63,45,58,25);
 
         System.out.println("Max = "+s);
+        
+    }
+    */
+
+    static int sum(int...a)
+    {
+        int sum = 0;
+        for(int i=0;i<a.length;i++)
+        {
+            sum = sum + a[i];
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) 
+    {
+        int m = sum(15,25,50,10);
+        System.out.println("Sum of m = "+m);
         
     }
     
