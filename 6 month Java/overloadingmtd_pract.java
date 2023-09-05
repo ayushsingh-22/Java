@@ -141,6 +141,7 @@ public class overloadingmtd_pract
     }
     */
 
+    /*
     static int sum(int...a)
     {
         int sum = 0;
@@ -150,16 +151,75 @@ public class overloadingmtd_pract
         }
         return sum;
     }
+    
+    static float sum(float...a)
+    {
+        float sum = 0f;
+        for(int i=0;i<a.length;i++)
+        {
+            sum = sum + a[i];
+        }
+        return sum;
+    }
 
     public static void main(String[] args) 
     {
-        int m = sum(15,25,50,10);
-        System.out.println("Sum of m = "+m);
-        
+        float m = sum(15.2f,25.2f,50.4f,10.72f);
+        System.out.println("Sum of all element of m = "+m);
+    }
+    */
+
+    static float sum(float...a)
+    {
+        float sum = 0;
+        for(int i=0;i<a.length;i++)
+        {
+            sum = sum + a[i];
+        }
+
+       float dis;
+        if (sum < 500f);
+        {
+            dis = 0.1f*sum;
+        }
+        return dis;
+    }
+
+    static float sum(int...a)
+    {
+         float dis=0;
+        int sum = 0;
+        for(int i=0;i<a.length;i++)
+        {
+            sum = sum + a[i];
+        }
+        System.out.println("Total amount of shopping = "+sum);
+      
+        if (sum <= 500)
+        {
+            dis = 0.1f*sum;
+            dis = sum - dis;
+        }
+        else if (sum > 500 && sum < 1000)
+        {
+            dis = 0.2f*sum;
+            dis = sum - dis;
+        }
+        else if (sum >= 1000)
+        {
+            dis = 0.25f*sum;
+            dis = sum - dis;
+        }
+        return dis;
     }
     
+    
 
-   
+    public static void main(String[] args) 
+    {
+        float m = sum(1050,255,120);
+        System.out.println("Amount spend after discount = "+m);
+    }
 
 
 }
