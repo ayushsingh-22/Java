@@ -90,6 +90,7 @@ public class overloadingmtd_pract
     }
     */
 
+    /* 
     static boolean valid(String name )
     { 
         return name.matches("[\\Sa-zA-Z\\s]+");
@@ -110,5 +111,37 @@ public class overloadingmtd_pract
         System.out.println(legal);
 
     }
+    */
+
+    
+    static int max(int ...a)
+    {
+        int m = a[0];
+        if (a.length==0)
+            {
+               return 0;
+            }
+        for(int i=1; i<a.length;i++)
+        {
+            if(a[i]>m)
+            {
+                m=a[i];
+            }
+            
+        }
+        return m;
+    }
+
+    public static void main(String[] args) 
+    {
+        int s = max(0,11,5,10,0,25,12);
+
+        System.out.println("Max = "+s);
+        
+    }
+    
+
+   
+
 
 }
