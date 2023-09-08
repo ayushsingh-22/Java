@@ -229,5 +229,6 @@ public class loopprac
             noss = noss + 2;
             System.out.println();  // Move to the next line after printing spaces and stars
         }
+        sc.close();
     }
 }
