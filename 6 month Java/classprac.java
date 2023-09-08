@@ -77,13 +77,31 @@ class classprac
 }
 */
 
-// calculate base area, volume and total area of cyclinder
+// calculate base area, volume and total area of cyclinder using hiding data logic
 
 /* 
 class cyclinder 
 {
-    public int height;
-    public int radius;
+    private int height;
+    private int radius;
+
+    public int getHeight()
+    {
+        return height;
+    }
+    public int getRadius()
+    {
+        return radius;
+    }
+
+    public void setHeight(int h)
+    {
+        height=h;
+    }
+    public void setRadius( int r)
+    {
+        radius=r;
+    }
 
     public float lidarea()
     {
@@ -111,10 +129,13 @@ class classprac
         Scanner sc=new Scanner(System.in);
         cyclinder cy=new cyclinder();
 
-        System.out.printf("Enter radius = ");
-        cy.radius = sc.nextInt();
-        System.out.printf("Enter height = ");
-        cy.height = sc.nextInt();
+        System.out.print("Enter radius = ");
+        int radius = sc.nextInt();
+        cy.setRadius(radius);
+
+        System.out.print("Enter height = ");
+        int height = sc.nextInt();
+        cy.setHeight(height);
         
         System.out.println("Area of cyclinder = "+cy.area());
         System.out.println("Volume of cyclinder = "+cy.volume());
@@ -126,7 +147,7 @@ class classprac
 
 // calculate average and total marks of students.
 
-
+/* 
 class student
 {
     public int m1;
@@ -169,3 +190,4 @@ class classprac
         
     }
 }
+*/
