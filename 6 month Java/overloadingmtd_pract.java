@@ -221,5 +221,4 @@ public class overloadingmtd_pract
         System.out.println("Amount spend after discount = "+m);
     }
 
-
 }
