@@ -77,6 +77,9 @@ class classprac
 }
 */
 
+// calculate base area, volume and total area of cyclinder
+
+/* 
 class cyclinder 
 {
     public int height;
@@ -117,6 +120,52 @@ class classprac
         System.out.println("Volume of cyclinder = "+cy.volume());
         System.out.println("Base area of cyclinder = "+cy.lidarea());
         sc.close();
+    }
+}
+*/
 
+// calculate average and total marks of students.
+
+
+class student
+{
+    public int m1;
+    public int m2;
+    public int m3;
+    public String name;
+    public int roll;
+
+    public int total()
+    {
+        return m1+m2+m3;
+    }
+
+    public float percentage()
+    {
+        return (total()/300f)*100;
+    }
+
+}
+
+class classprac
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        student st = new student();
+
+        System.out.print("Enter your name = ");
+        st.name = sc.nextLine();
+        System.out.print("Enter m1 = ");
+        st.m1= sc.nextInt();
+        System.out.print("Enter m2 = ");
+        st.m2= sc.nextInt();
+        System.out.print("Enter m3 = ");
+        st.m3= sc.nextInt();
+
+        System.out.println(st.name + " score " + st.total() + " out of 300.");
+        System.out.println(st.name + " got overall " + st.percentage() + "% in all subject. ");
+        sc.close();
+        
     }
 }
