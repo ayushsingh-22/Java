@@ -191,3 +191,55 @@ class classprac
     }
 }
 */
+
+class rectangle 
+{
+    private int length;
+    private int width;
+
+    public int getLength()
+    {
+        return length;
+    }
+
+    public void setLength(int l)
+    {
+        length = l;
+    }
+
+    public int getWidth()
+    {
+        return width;
+    }
+
+    public void setWidth(int w)
+    {
+        width = w;
+    }
+
+    public int area()
+    {
+        int ar = length*width;
+        return ar;
+    }
+
+    public int perimeter()
+    {
+        int peri = 2*(length+width);
+        return peri;
+    }
+}
+
+class classprac
+{
+    public static void main(String[] args) 
+    {
+        rectangle rec = new rectangle();
+        rec.setLength(5);
+        rec.setWidth(4);
+
+        System.out.println("Area of rectangle = "+ rec.area());
+        System.out.println("Perimeter of rectangle = " +rec.perimeter());
+        
+    }
+}
