@@ -1,5 +1,7 @@
 import java.util.*;
 
+import javax.print.DocFlavor.STRING;
+
 // find area of rectangle using constructor.
 
 /*
@@ -65,6 +67,7 @@ public class constrpracc
 
 // using constructor find area of cyclinder
 
+/* 
 class cyclinder
 {
     private float radius;
@@ -88,7 +91,7 @@ class cyclinder
 
     public void setHeight(float h)
     {
-        if(height>0)
+        if(height<0)
         {
             height = 0;
         }
@@ -98,7 +101,7 @@ class cyclinder
 
     public void setRadius(float r)
     {
-         if(radius>0)
+         if(radius<0)
         {
             radius = 0;
         }
@@ -108,7 +111,7 @@ class cyclinder
 
     public float area()
     {
-        float ara = (float)Math.PI*radius*radius*height;
+        float ara = (2*(float)Math.PI*radius*radius)+(2*height*radius*(float)Math.PI);
         return ara;
     }
 
@@ -127,14 +130,68 @@ class constrpracc
         cyclinder cy = new cyclinder();
 
         System.out.print("Enter radius = ");
-        float rad = cy.setRadius();
-        rad = sc.nextInt();
+        float rad = sc.nextFloat();
+        cy.setRadius(rad);
+
         System.out.print("Enter height = ");
-        float ht = cy.setHeight();
-        ht = sc.nextInt();
+        float ht = sc.nextFloat();
+        cy.setHeight(ht);
 
-        System.out.println("Volume of cyclinder = "+cy.area());
 
-        
+        System.out.println("Volume of cyclinder = "+cy.volume());
+        System.out.println("Area of cyclinder = "+cy.area());
+        sc.close();
+    
     }
+}
+*/
+
+// product - customer challenge
+
+class product
+{
+    private String name;
+    private float price;
+    private int quantity;
+    private int itemno;
+
+    public product(int q, float p)
+    {
+        price = p;
+        quantity = q;
+    }
+
+    public String name()
+    {
+        return name;
+    }
+
+    public float getPrice()
+    {
+        return price;
+    }
+
+    public int quantity()
+    {
+        return quantity;
+    }
+
+    public int itemno()
+    {
+        return itemno;
+    }
+
+    public void setPrice(int p)
+    {
+        price = p;
+    }
+
+    public void quantity(int q)
+    {
+        quantity = q; 
+    }
+
+
+
+
 }
