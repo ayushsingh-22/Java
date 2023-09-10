@@ -2,6 +2,7 @@ import java.util.*;
 
 // volume of cyclinder using inheritance
 
+/* 
 class circle
 {
     public float radius;
@@ -53,3 +54,97 @@ public class inheritancepracc
     }
     
 }
+*/
+
+//  practise class, constructor, inheritance //
+
+class account
+{
+    private String name;
+    private String accno;
+    private String mobile;
+    private String date;
+    private int balance;
+    private String dob;
+
+// constructror class
+
+    public account(String n,String an,String d)
+    {
+        name = n;
+        accno = an;
+        dob = d;
+        balance = 0;
+    }
+
+    // public account()
+    // {
+
+    // }
+
+// getter - setter method
+
+    public String getName()
+    {
+        return name;
+    }
+
+   public String getdob()
+    {
+        return dob;
+    }
+
+    public String getMobile()
+    {
+        return mobile;
+    }
+
+    public String getAccno()
+    {
+        return accno;
+    }
+
+    public String getDate()
+    {
+        return date;
+    }
+
+    public int getBalance()
+    {
+        return balance;
+    }
+
+    public void setBalance(int b)
+    {
+        balance = b;
+    }
+
+    
+
+}
+
+class saving extends account 
+{
+    public int deposit;
+    public int withdrawl;
+    public int charges;
+    public int fixed;
+    public int amt;
+
+   
+     public saving()
+     {
+        super("Ayush", "Fa","gto");
+     }
+
+     public void deposit(int withdrawl)
+    {
+        setBalance(getBalance() + withdrawl);
+    }
+    public void withdraw(int withdrawl)
+    {
+        setBalance(getBalance() - withdrawl);
+    }
+
+}
+
