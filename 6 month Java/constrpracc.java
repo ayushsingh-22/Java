@@ -150,48 +150,84 @@ class constrpracc
 
 class product
 {
+    private String itemno;  
     private String name;
     private float price;
     private int quantity;
-    private int itemno;
 
-    public product(int q, float p)
+     public product(String i, String n )
     {
-        price = p;
-        quantity = q;
+        itemno=i;
+        name = n;
     }
 
-    public String name()
+    public String getItemno()
+    {
+        return itemno;
+    }
+    
+    public String getName()
     {
         return name;
     }
-
+    
     public float getPrice()
     {
         return price;
     }
-
-    public int quantity()
+    
+    public int getQuantity()
     {
         return quantity;
     }
 
-    public int itemno()
-    {
-        return itemno;
-    }
-
-    public void setPrice(int p)
+    public void setPrice(float p)
     {
         price = p;
     }
-
-    public void quantity(int q)
+    
+    public void setQuantity(int q)
     {
-        quantity = q; 
+        quantity = q;
+    }
+}
+
+class customer
+{
+    private String  name;
+    private String custid;
+    private String mob_no;
+    private String email;
+
+    public customer(String n, String c)
+    {
+        name = n;
+        custid = c;
     }
 
+    public String getName()
+    {
+        return name;
+    }
 
+    public String getMob_no()
+    {
+        return mob_no;
+    }
 
+    public String getCustid()
+    {
+        return custid;
+    }
+
+    public String getEmail()
+    {
+        return email;
+    }
+
+    public void setMob_no(String m)
+    {
+        mob_no = m;
+    }
 
 }
