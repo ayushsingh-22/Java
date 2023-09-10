@@ -58,6 +58,7 @@ public class inheritancepracc
 
 //  practise class, constructor, inheritance //
 
+/* 
 class account
 {
     private String name;
@@ -147,4 +148,39 @@ class saving extends account
     }
 
 }
+*/
 
+// Constructor in heritance //
+
+class parent 
+{
+    public parent()
+    {
+        System.out.println("Parent Constructor.");
+    }
+}
+
+class child extends parent 
+{
+    public child()
+    {
+        System.out.println("Child Constructor.");
+    }
+}
+
+class grandchild extends child
+{
+    public grandchild()
+    {
+        System.out.printf("Grand child Constructor.\n");
+    }
+}
+
+class inheritancepracc
+{
+    public static void main(String[] args) 
+    {
+        grandchild gc = new grandchild();
+        
+    }
+}
