@@ -181,6 +181,5 @@ class inheritancepracc
     public static void main(String[] args) 
     {
         grandchild gc = new grandchild();
-        
     }
 }
