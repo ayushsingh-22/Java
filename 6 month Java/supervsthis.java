@@ -34,6 +34,7 @@ public class supervsthis
 
 */
 
+/* 
 class parent
 {
     public parent()
@@ -68,3 +69,4 @@ class supervsthis
         child ch = new child(20,50);
     }
 }
+*/
