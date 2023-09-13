@@ -1,3 +1,5 @@
+/* 
+
 class parent
 {
     int x=10;
@@ -28,4 +30,41 @@ public class supervsthis
         
     }
     
+}
+
+*/
+
+class parent
+{
+    public parent()
+    {
+        System.out.println("Unparametrized constructor");
+    }
+
+    public parent(int x)
+    {
+        System.out.println("Pramaterixed constructor = "+x);
+    }
+}
+
+class child extends parent
+{
+    public child()
+    {
+        System.out.println("Child class hai ");
+    }
+
+    public child(int x,int y)
+    {
+        super(x);
+        System.out.println("child class with data = "+y);
+    }
+}
+
+class supervsthis
+{
+    public static void main(String[] args) 
+    {
+        child ch = new child(20,50);
+    }
 }
