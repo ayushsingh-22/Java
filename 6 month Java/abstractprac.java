@@ -103,7 +103,7 @@ class abstractprac
 
         System.out.println("Area = "+rc.area());
         System.out.println("Perimeter = "+rc.perimeter());
+        sc.close();
 
-        
     }
 }
