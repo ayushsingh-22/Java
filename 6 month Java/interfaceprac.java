@@ -32,7 +32,7 @@ class interfaceprac
 }
 
 */
-
+/*
 //Creating interface that has 4 methods  
 interface A
 {  
@@ -69,3 +69,57 @@ public static void main(String args[])
 }
     
 }  
+*/
+
+// student challenge call back
+
+interface member 
+{
+    void callback();
+}
+
+class customer implements member
+{
+    String name;
+    customer (String n)
+    {
+        name = n;
+    }
+
+   public void callback()
+    {
+        System.out.println("Thank you!! " +name + " visit ");
+    }
+}
+
+class shop 
+{
+    member mem[] = new member[100];
+    int count = 0;
+
+    void register (member m)
+    {
+        mem[count++]=m;
+    }
+
+    void offer()
+    {
+        for (int i=0; i<count; i++)
+        {
+            mem[i].callback();
+        }
+    }
+}
+
+class interfaceprac
+{
+    public static void main(String[] args) 
+    {
+        shop sp = new shop();
+        customer c1 = new customer("Ayush.");
+        sp.register(c1);
+        sp.offer();
+
+        
+    }
+}
