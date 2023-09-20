@@ -1,7 +1,8 @@
 
-/* 
+
 interface test
 {
+    static int a = 20;
     void mtd1();
     void mtd2();
 }
@@ -27,11 +28,14 @@ class interfaceprac
     {
         my m = new my();
         m.mtd1();
-        m.mtd2();  
+        m.mtd2(); 
+
+        System.out.println(test.a);
+         
     }
 }
 
-*/
+
 /*
 //Creating interface that has 4 methods  
 interface A
@@ -73,6 +77,7 @@ public static void main(String args[])
 
 // student challenge call back
 
+/*
 interface member 
 {
     void callback();
@@ -123,3 +128,4 @@ class interfaceprac
         
     }
 }
+*/
