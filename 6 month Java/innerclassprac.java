@@ -104,7 +104,7 @@ class innerclassprac
 
 // anonymous class 
 
-
+/* 
 interface gun 
 {
     void typee();
@@ -115,14 +115,65 @@ class innerclassprac
     public static void main(String[] args) 
     {
         gun gg = new gun() 
-    {
-        public void typee()
         {
-            System.out.println("Ya par method override karna jaruri hai; Pta hana!!!");
-        }
-        
-    };
+            public void typee()
+            {
+                System.out.println("Ya par method override karna jaruri hai; Pta hana!!!");
+            }
+        };
 
         gg.typee();
+    }
+}
+*/
+/* 
+abstract class fun
+{
+    abstract void mojj();
+}
+
+class innerclassprac
+{
+    public static void main(String[] args) 
+    {
+        fun ff = new fun() 
+        {
+            public void mojj()
+            {
+                System.out.println("Same logic abstract class ka liya bhi hota hai. ");
+                System.out.println("Pta too hoga hi!!!");
+            }
+        };
+
+        ff.mojj();
+    }
+}
+*/
+
+//  static inner class
+
+class sleep
+{
+    int x=20;
+    static int y=30;
+
+    static class dream
+    {
+        void dursleep()
+        {
+            System.out.println();
+            System.out.println("Sona ka baad mast SAPNA aata hai !!!! ---> " +y);
+            System.out.println();
+        }
+    }
+}
+
+class innerclassprac
+{
+    public static void main(String[] args) 
+    {
+        sleep.dream sd = new sleep.dream();
+        sd.dursleep();
+        
     }
 }
