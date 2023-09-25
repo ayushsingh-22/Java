@@ -25,6 +25,9 @@ public class statickeypracc
         System.out.print("Enter valye of num = ");
         int f = sc.nextInt();
         System.out.println("Test percentage = "+test.testper(f));
+        sc.close();
     }
     
 }
+
+

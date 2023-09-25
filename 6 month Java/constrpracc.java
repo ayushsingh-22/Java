@@ -1,10 +1,9 @@
 import java.util.*;
 
-import javax.print.DocFlavor.STRING;
 
 // find area of rectangle using constructor.
 
-/*
+
 class rectangle 
 {
     private int length;
@@ -63,7 +62,7 @@ public class constrpracc
     }
     
 }
-*/
+
 
 // using constructor find area of cyclinder
 
@@ -148,6 +147,7 @@ class constrpracc
 
 // product - customer challenge
 
+/* 
 class product
 {
     private String itemno;  
@@ -231,3 +231,4 @@ class customer
     }
 
 }
+*/
