@@ -4,12 +4,12 @@ public class area
     public static void main (String [] args)
     {
         Scanner sc=new Scanner(System.in);
-        float b,h;
+        float b,height;
         System.out.print("Enter height = ");
-        h = sc.nextFloat();
+        height = sc.nextFloat();
         System.out.print ("Enter breath = ");
         b=sc.nextFloat();
-        float area=(0.5f)*(b*h);
+        float area=(0.5f)*(b*height);
         System.out.print("Area of triangle = "+ area);
         sc.close();
     }
