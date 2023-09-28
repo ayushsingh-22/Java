@@ -2,7 +2,7 @@ import java.util.*;
 class game
 {
     Scanner sc = new Scanner (System.in);
-    int gusser, umpire, p1,p2,p3;
+    int gusser, umpire, player1,player2,player3;
 
     public void games()
     {
@@ -11,31 +11,31 @@ class game
         umpire = gusser;
 
         System.out.print("Tell secreat number to umpire (under 0 - 10) by player 1 = ");
-        p1  =  sc.nextInt();
+        player1  =  sc.nextInt();
         System.out.print("Tell secreat number to umpire (under 0 - 10) by player 2  = ");
-        p2 =  sc.nextInt();
+        player2 =  sc.nextInt();
         System.out.print("Tell secreat number to umpire (under 0 - 10) by player 3 = ");
-        p3 =  sc.nextInt();
+        player3 =  sc.nextInt();
 
-        if (p1 == umpire && p2 == umpire && p3 == umpire)
+        if (player1 == umpire && player2 == umpire && player3 == umpire)
         {
              System.out.println();
             System.out.println("Congo!! you all win the game.");
         }
 
-        else if (p1 == umpire && p2 != umpire && p3 != umpire)
+        else if (player1 == umpire && player2 != umpire && player3 != umpire)
         {
              System.out.println();
             System.out.println("Congo!! Player 1 win the match😊😊");
         }
 
-         else if (p3 == umpire)
+         else if (player3 == umpire)
         {
              System.out.println();
             System.out.println("Congo!! Player 3 win the match😊😊");
         }
 
-         else if (p2 == umpire )
+         else if (player2 == umpire )
         {
              System.out.println();
             System.out.println("Congo!! Player 2 win the match😊😊");
