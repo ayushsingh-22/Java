@@ -1,125 +1,31 @@
+class Human {
+    private int age;
+    private String name;
 
-/*
-class StreamingSong 
-{
-    String title;
-    String artist;
-    int duration;
-    void play() 
-    {
-        System.out.println("Playing song");
-    }
-    void printDetails() 
-    {
-        System.out.println("This is " + title + " by " + artist);
-    }
-}
-
-class hi
-{
-    public static void main(String[] args)
-    {
-        StreamingSong song = new StreamingSong();
-        song.artist = "The Beatles";
-        song.title = "Come Together";
-        song.play();
-        song.printDetails();
-    }
-}
-*/
-
-/* 
-class Episode 
-{
-    int seriesNumber;
-    int episodeNumber;
-    void skipIntro() 
-    {
-        System.out.println("Skipping intro...");
-    }
- void skipToNext() 
- {
-    System.out.println("Loading next episode...");
- }
-}
-class methoddemo
-{
-    public static void main(String[] args) 
-    {
-        Episode episode = new Episode();
-        episode.seriesNumber = 4;
-        episode.skipToNext();
-        episode.skipIntro();
-    }
-}
-*/
-/* 
-class Books
-{
-    String title;
-    String author;
-}
-class methoddemo
-{
-    public static void main(String[] args) 
-    {
-        Books[] myBooks = new Books[3];
-
-        myBooks[0] = new Books();
-        myBooks[1] = new Books();
-        myBooks[2] = new Books();
-
-        int x = 0;
-        myBooks[0].title = "The Grapes of Java";
-        myBooks[1].title = "The Java Gatsby";
-        myBooks[2].title = "The Java Cookbook";
-        myBooks[0].author = "bob";
-        myBooks[1].author = "sue";
-        myBooks[2].author = "ian";
-        
-        while (x < 3) 
-        {
-            System.out.println();
-            System.out.print(myBooks[x].title);         
-            System.out.print(" by ");         
-            System.out.println(myBooks[x].author);
-            System.out.println();
-            x = x + 1;
-        }
-    }
-}
-*/
-
-
-class calculator
-{
-    public static int add(int a,  int b)
-    {
-        return a+b;
+    public int getAge() {
+        return age;
     }
 
-}
-
-class advance 
-{
-    private int sum;
-    public advance()
-    {
-        sum = calculator.add(50, 50);
+    public void setAge(int fun) {
+        this.age = fun;
     }
 
-    public void addddd()
-    {
-        System.out.print(sum+2);
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
 
-class methoddemo
-{
-    public static void main(String[] args) 
-    {
-        advance cc = new advance();
-        cc.addddd();
-       
+public class methoddemo {
+    public static void main(String[] args) {
+        Human obj = new Human();
+
+        obj.setAge(30);
+        obj.setName("Reddy");
+
+        System.out.println(obj.getName() + " : " + obj.getAge());
     }
 }
