@@ -41,7 +41,7 @@ class Episode
     System.out.println("Loading next episode...");
  }
 }
-class hi
+class methoddemo
 {
     public static void main(String[] args) 
     {
