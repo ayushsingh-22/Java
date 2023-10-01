@@ -98,18 +98,19 @@ class calculator
         return a+b;
     }
 
-    public int sub (int a, int b)
-    {
-        return a-b;
-    }
 }
 
 class advance 
 {
+    private int sum;
     public advance()
     {
-        calculator com = new calculator();
-        int summ = com.add(50, 50);
+        sum = calculator.add(50, 50);
+    }
+
+    public void addddd()
+    {
+        System.out.print(sum+2);
     }
 }
 
@@ -117,9 +118,8 @@ class methoddemo
 {
     public static void main(String[] args) 
     {
-        calculator cc = new calculator();
-        System.out.println(cc.add(55, 65));
-        System.out.println(cc.sub(256, 056));
-
+        advance cc = new advance();
+        cc.addddd();
+       
     }
 }
