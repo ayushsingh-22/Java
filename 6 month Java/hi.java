@@ -1,3 +1,5 @@
+
+/*
 class StreamingSong 
 {
     String title;
@@ -22,5 +24,30 @@ class hi
         song.title = "Come Together";
         song.play();
         song.printDetails();
+    }
+}
+*/
+
+class Episode 
+{
+    int seriesNumber;
+    int episodeNumber;
+    void skipIntro() 
+    {
+        System.out.println("Skipping intro...");
+    }
+ void skipToNext() 
+ {
+    System.out.println("Loading next episode...");
+ }
+}
+class hi
+{
+    public static void main(String[] args) 
+    {
+        Episode episode = new Episode();
+        episode.seriesNumber = 4;
+        episode.skipToNext();
+        episode.skipIntro();
     }
 }
