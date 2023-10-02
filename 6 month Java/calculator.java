@@ -15,6 +15,7 @@ public class calculator
         int n2 = sc.nextInt();
 
         // advcalc ad = new advcalc();
+        
         System.out.println( "Addition of " +n1 + " & " +n2+ " = " +ad.add(n1,n2));
         System.out.println( "Max of " +n1 + " & " +n2+ " = " +ad.max(n1,n2));
         System.out.println( "Power of " +n1 + " raise to " +n2+ " = " +ad.power(n1,n2));
