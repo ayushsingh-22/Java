@@ -2,9 +2,9 @@ package tools;
 
 public class advcalc extends calc
 {
-    public int power(int a, int b)
+    public double power(int a, int b)
     {
-        return (int)Math.pow(a, b);
+        return Math.pow(a, b);
     }
 
     public int min(int a, int b)
@@ -17,4 +17,26 @@ public class advcalc extends calc
         return (int)Math.max(a, b);
     }
     
+    public double rem(int a, int b)
+    {
+        if(b>0)
+        {
+            if(a%b==0)
+            {
+                System.out.println("Quotient of "+ a +" when divided by "+b+" = " +(a/b));
+                return a%b;
+            }
+
+            else 
+            {
+                return a%b;
+            }
+        }  
+            
+        else
+        {
+            return 0;
+        }
+        
+    }
 }
