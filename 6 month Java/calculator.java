@@ -19,7 +19,7 @@ public class calculator
         System.out.println( "Addition of " +n1 + " & " +n2+ " = " +ad.add(n1,n2));
         System.out.println( "Max of " +n1 + " & " +n2+ " = " +ad.max(n1,n2));
         System.out.println( "Power of " +n1 + " raise to " +n2+ " = " +ad.power(n1,n2));
-        
+        System.out.println();
         System.out.println( "Remainder of " +n1 + " when divided by " +n2+ " = " +ad.rem(n1,n2));
 
         sc.close();
