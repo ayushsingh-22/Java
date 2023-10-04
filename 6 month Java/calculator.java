@@ -22,6 +22,7 @@ public class calculator
         System.out.println();
         System.out.println( "Remainder of " +n1 + " when divided by " +n2+ " = " +ad.rem(n1,n2));
 
+        System.out.println( "Square of " +n1 +" = "+ad.root(n1));
         sc.close();
     }
 

@@ -12,13 +12,14 @@ public class calc
         return a-b;
     }
     
-     public int mult(int a, int b)
+    public int mult(int a, int b)
     {
         return a*b;
     }
 
-     public int div(int a, int b)
+    public double root(int a)
     {
-        return a/b;
+        return Math.sqrt(a);
     }
+     
 }
