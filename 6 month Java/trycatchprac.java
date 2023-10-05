@@ -4,16 +4,16 @@ class ListOfNumbers {
   public void writeList() {
 
     try {
-      arr[9] = p;
+      arr[10] = 11;
     }
     
-    catch (Exception e1) {
-      System.out.println("NumberFormatException => " + e1);
-    }
-    
-    // catch (Exception e2) {
-    //   System.out.println("IndexOutOfBoundsException => " + e2);
+    // catch (Exception e1) {
+    //   System.out.println("NumberFormatException => " + e1);
     // }
+    
+    catch (Exception e2) {
+      System.out.println("IndexOutOfBoundsException => " );
+    }
 
   }
 }
