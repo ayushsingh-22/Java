@@ -7,12 +7,22 @@ class ListOfNumbers {
       arr[10] = 11;
     }
     
-    // catch (Exception e1) {
-    //   System.out.println("NumberFormatException => " + e1);
-    // }
+    catch (NumberFormatException e1) 
+    {
+        System.out.println();
+        System.out.println("NumberFormatException => " + e1.getMessage());
+    }
     
-    catch (Exception e2) {
-      System.out.println("IndexOutOfBoundsException => " );
+    catch (IndexOutOfBoundsException e2) 
+    {
+        System.out.println();
+        System.out.println("IndexOutOfBoundsException => " + e2.getMessage());
+    }
+
+    finally
+    {
+        System.out.println();
+        System.out.println("Agar ab error pta chl gya hai to sahi kar lai!!!!");
     }
 
   }
