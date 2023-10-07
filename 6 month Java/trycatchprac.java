@@ -1,29 +1,24 @@
-import java.util.Scanner;
-
-class trycatchprac 
+class trycatchprac
 {
-  public static void main(String[] args) 
-  {
-    Scanner sc = new Scanner(System.in);
-    int a=10;
-    System.out.print("Enter value of b = ");
-    int b = sc.nextInt();
-
-    try
+    static int mtd1(int l, int b)
     {
-      int c = a/b;
-      System.out.println("Answer aagya");
+        return l*b;
     }
 
-    // catch(ArithmeticException e)
-    // {
-    //   System.out.println("Error ----> " +e.getMessage());
-    // }
-
-    catch(ArithmeticException e)
+    static int mth2()
     {
-      System.out.println("Error ----> " +e);
+        return mtd1(5,10);
     }
 
-  }
+    static int mth3()
+    {
+       return mth2();
+    }
+
+    public static void main(String[] args) 
+    {
+        System.out.println("Area = " +mth3());
+
+    }
+
 }
