@@ -1,13 +1,24 @@
 class trycatchprac
 {
-    static int mtd1(int l, int b)
+    static int mtd1(int l, int b) throws Exception
     {
+        if(l<0 || b<0)
+            throw new Exception();
         return l*b;
     }
 
     static int mth2()
     {
-        return mtd1(5,10);
+        try
+        {
+            return mtd1(5,10);
+        }
+
+        catch(Exception e)
+        {
+            System.out.println(e);
+            return 0;
+        }
     }
 
     static int mth3()

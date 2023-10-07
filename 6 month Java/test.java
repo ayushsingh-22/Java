@@ -11,5 +11,7 @@ public class test
         b=sc.nextInt();
         a = l*b;
         System.out.print("Area of rectangle = "+a);
+
+        sc.close();
     }
 }
