@@ -1,3 +1,4 @@
+import java.util.Scanner;
 class NegativeException extends Exception
 {
     public String toString()
@@ -17,9 +18,11 @@ class trycatchprac
 
     static int mth2() throws NegativeException
     {
-
-        return mtd1(50,-10);
-    
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter value of l & b: ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        return mtd1(a,b);
     }
 
     static int mth3() throws NegativeException
