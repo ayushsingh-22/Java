@@ -1,34 +1,42 @@
+class NegativeException extends Exception
+{
+    public String toString()
+    {
+        return "Dimension never be negative.";
+    }
+}
+
 class trycatchprac
 {
-    static int mtd1(int l, int b) throws Exception
+    static int mtd1(int l, int b) throws NegativeException
     {
         if(l<0 || b<0)
-            throw new Exception();
+            throw new NegativeException();
         return l*b;
     }
 
-    static int mth2()
+    static int mth2() throws NegativeException
     {
-        try
-        {
-            return mtd1(5,10);
-        }
 
-        catch(Exception e)
-        {
-            System.out.println(e);
-            return 0;
-        }
+        return mtd1(50,-10);
+    
     }
 
-    static int mth3()
+    static int mth3() throws NegativeException
     {
        return mth2();
     }
 
     public static void main(String[] args) 
     {
+        try
+        {
         System.out.println("Area = " +mth3());
+        }
+        catch(NegativeException e)
+        {
+            System.out.println(e);
+        }
 
     }
 
