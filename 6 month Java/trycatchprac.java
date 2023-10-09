@@ -135,9 +135,17 @@ class Stack
     public void push(int x) throws StackOverFlow
     {
         if(top==size-1)
+        {
             throw new StackOverFlow();
-        top++;
-        S[top]=x;
+        }
+
+        else
+        {
+            top++;
+          
+        }
+
+          S[top]=x;
     }
     
     public int pop() throws StackUnderFlow
@@ -167,7 +175,7 @@ public class trycatchprac
         st.push(10);
         st.push(15);
         st.push(10);
-        st.push(15);
+      
         
         }
         catch(StackOverFlow s)
