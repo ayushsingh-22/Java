@@ -152,6 +152,7 @@ class saving extends account
 
 // Constructor in heritance //
 
+/* 
 class parent 
 {
     public parent()
@@ -181,6 +182,53 @@ class inheritancepracc
     public static void main(String[] args) 
     {
         grandchild gc = new grandchild();
+    }
+}
+*/
+
+class Parent 
+{
+    public int publicVar = 10;
+    protected int protectedVar = 20;
+    int defaultVar = 30;
+    private int privateVar = 40;
+
+    public void publicMethod() {
+        System.out.println("This is a public method in the Parent class");
+    }
+
+    protected void protectedMethod() {
+        System.out.println("This is a protected method in the Parent class");
+    }
+
+    void defaultMethod() {
+        System.out.println("This is a default method in the Parent class");
+    }
+
+    private void privateMethod() {
+        System.out.println("This is a private method in the Parent class");
+    }
+}
+
+class Child extends Parent 
+{
+    public void displayParentVariables() {
+       
+        System.out.println("Inherited publicVar: " + publicVar);
+        System.out.println("Inherited protectedVar: " + protectedVar);
+        System.out.println("Inherited defaultVar: " + defaultVar);
+
+        
+        // System.out.println("Inherited privateVar: " + privateVar);
+    }
+
+    public void displayParentMethods() {
+     
+        publicMethod();
+        protectedMethod();
+        defaultMethod();
+        
+        // privateMethod();
     }
 }
 
