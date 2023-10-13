@@ -1,31 +1,28 @@
-class threads extends Thread 
+class my extends Thread
 {
-    public void run()
+  public void run ()
+  {
+    for (int i = 0; i < 20; i++)
     {
-        int i=0;
-        while(i<20)
-        {
-            System.out.print("Hello "+" ");
-            i++;
-        }
-        System.out.println();
+    	System.out.print ("Ayush");
+    	break;
     }
+  }
 }
 
 public class threadsprac
 {
-    public static void main(String[] args) 
-    {
-        threads td = new threads();
-        td.start();
-    
-        int i=0;
-        while(i<20)
-        {
-            System.out.print("Java " + " ");
-            i++;
-        }
-        System.out.println();
-        
-    }
+  public static void main (String[]args)
+  {
+    my tc = new my ();
+      tc.start ();
+
+    for (int i = 0; i < 20; i++)
+      {
+	System.out.print ("Hello World");
+      }
+
+    System.out.println ();
+
+  }
 }
