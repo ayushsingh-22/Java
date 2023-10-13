@@ -26,7 +26,6 @@ public class threadsprac
             i++;
         }
         System.out.println();
-
         
     }
 }
