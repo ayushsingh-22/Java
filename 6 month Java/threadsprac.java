@@ -64,6 +64,7 @@ class threadsprac
 
 // Using run interface with different method //
 
+/* 
 class threadsprac implements Runnable
 {
     public void run()
@@ -85,5 +86,33 @@ class threadsprac implements Runnable
     	        System.out.print ("Good");
             }
 
+    }
+}
+*/
+
+import java.util.Scanner;
+class name
+{
+    public void display(String s)
+    {
+        for(int i=0;i<s.length();i++)
+        {
+            System.out.println("Character at index "+ i + " --> "+ s.charAt(i));
+        }
+        
+    }
+
+}
+
+class threadsprac
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter string name --> ");
+        name n = new name();
+        String s = sc.nextLine();
+        n.display(s);
+      
     }
 }
