@@ -90,29 +90,65 @@ class threadsprac implements Runnable
 }
 */
 
-import java.util.Scanner;
-class name
+
+class MyData
 {
-    public void display(String s)
+      void display(String str)
     {
-        for(int i=0;i<s.length();i++)
-        {
-            System.out.println("Character at index "+ i + " --> "+ s.charAt(i));
-        }
+            for(int i=0;i<str.length();i++)
+            {
+                 System.out.print(str.charAt(i));
+                 
+            }
         
     }
-
 }
 
-class threadsprac
+class MyThread1 extends Thread
+{
+    MyData d;
+    MyThread1(MyData dat)
+    {
+        d=dat;
+    }
+    
+    public void run()
+    {
+        d.display("Hello World");
+    }
+            
+    
+}
+
+class MyThread2 extends Thread
+{
+    MyData data;
+    MyThread2(MyData dat)
+    {
+        data=dat;
+    }
+    
+    public void run()
+    {
+        data.display("Welcome");
+    }
+            
+    
+}
+
+class threadsprac 
 {
     public static void main(String[] args) 
     {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter string name --> ");
-        name n = new name();
-        String s = sc.nextLine();
-        n.display(s);
-      
-    }
+        MyData d=new MyData();
+        
+        MyThread1 t1=new MyThread1(d);
+        MyThread2 t2=new MyThread2(d);
+        
+        t1.start();
+        t2.start();
+        
+        
+    
+    }    
 }
