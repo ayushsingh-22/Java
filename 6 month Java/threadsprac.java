@@ -90,7 +90,7 @@ class threadsprac implements Runnable
 }
 */
 
-
+/* 
 import java.util.Scanner;
 
 class name
@@ -147,4 +147,59 @@ class threadsprac
         sc.close();
       
     }
+}
+
+*/
+class mydata 
+{
+  void display(String s)
+  {
+    for(int i=0;i<s.length(); i++)
+    {
+      System.out.print(s.charAt(i));
+    }
+
+  }
+}
+class mythread1 extends Thread
+{
+  mydata d;
+
+  mythread1(mydata da)
+  {
+    d = da;
+  }
+
+  public void run()
+  {
+    d.display("Bihar ");
+  }
+}
+
+class mythread2 extends Thread
+{
+  mydata d2;
+
+  mythread2(mydata da2)
+  {
+    d2 = da2;
+  }
+
+  public void run()
+  {
+    d2.display("Delhi");
+  }
+}
+
+class threadsprac
+{
+  public static void main(String[] args)
+  {
+    mydata d1 = new mydata();
+    mydata d2 = new mydata();
+    mythread1 t1 = new mythread1(d1);
+    mythread2 t2 = new mythread2(d2);
+    t1.start();
+    t2.start();
+  }
 }
