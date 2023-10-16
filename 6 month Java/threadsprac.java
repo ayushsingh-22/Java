@@ -185,10 +185,10 @@ class mythread2 extends Thread
     d2 = da2;
   }
 
-  public void run()
-  {
-    d2.display("Delhi");
-  }
+  // public void run()
+  // {
+  //   d2.display("Delhi");
+  // }
 }
 
 class threadsprac
