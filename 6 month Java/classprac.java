@@ -194,7 +194,7 @@ class classprac
 
 // using hiding concept, find area & perimeter of rectangle
 
-/* 
+
 class rectangle 
 {
     private int length;
@@ -246,5 +246,5 @@ class classprac
         
     }
 }
-*/
+
 

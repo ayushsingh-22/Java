@@ -148,8 +148,8 @@ class threadsprac
       
     }
 }
+*/
 
-/*
 class mydata 
 {
   void display(String s)
@@ -203,5 +203,5 @@ class threadsprac
     t2.start();
   }
 }
-*/
+
 
