@@ -150,7 +150,7 @@ class threadsprac
 }
 */
 
-/*
+
 class mydata 
 {
   void display(String s)
@@ -177,20 +177,7 @@ class mythread1 extends Thread
   }
 }
 
-class mythread2 extends Thread
-{
-  mydata d2;
 
-  mythread2(mydata da2)
-  {
-    d2 = da2;
-  }
-
-  public void run()
-  {
-    d2.display("Delhi");
-  }
-}
 
 class threadsprac
 {
@@ -199,55 +186,9 @@ class threadsprac
     mydata d1 = new mydata();
     mydata d2 = new mydata();
     mythread1 t1 = new mythread1(d1);
-    mythread2 t2 = new mythread2(d2);
+    // mythread2 t2 = new mythread2(d2);
     t1.start();
-    t2.start();
+    // t2.start();
   }
-}
-*/
-
-class Complex{
-    double real;
-    double img;
-
-    Complex(double real, double img){
-        this.real = real;
-        this.img = img;
-    }
-
-    void display(){
-        System.out.println(real + "+" + img + "i");
-    }
-}
-
-class AddComplex extends Complex{
-
-    private double SumReal;
-    private double SumImg;
-
-    AddComplex(double real1, double img1,double real2, double img2) {
-        super(real1, img1);
-        SumReal = real1 + real2;
-        SumImg = img1 + img2;
-    }
-
-    void displaySum(){
-        System.out.print(SumReal + "+" + SumImg + "i");
-    }
-}
-
-public class threadsprac {
-    public static void main(String[] args) {
-        Complex c1 = new Complex(2,4);
-        Complex c2 = new Complex(1,5);
-        AddComplex sum = new AddComplex(c1.real, c1.img, c2.real,c2.img);
-
-        System.out.println("Complex Numbers");
-        c1.display();
-        c2.display();
-
-        System.out.print("Sum = ");
-        sum.displaySum();
-    }
 }
 
