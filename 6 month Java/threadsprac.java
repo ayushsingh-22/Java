@@ -246,7 +246,7 @@ public class threadsprac {
         c1.display();
         c2.display();
 
-        System.out.println("Sum");
+        System.out.print("Sum ");
         sum.displaySum();
     }
 }
