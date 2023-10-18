@@ -150,6 +150,7 @@ class threadsprac
 }
 */
 
+/*
 class mydata 
 {
   void display(String s)
@@ -203,5 +204,50 @@ class threadsprac
     t2.start();
   }
 }
+*/
 
+class Complex{
+    double real;
+    double img;
+
+    Complex(double real, double img){
+        this.real = real;
+        this.img = img;
+    }
+
+    void display(){
+        System.out.println(real + "+" + img + "i");
+    }
+}
+
+class AddComplex extends Complex{
+
+    private double SumReal;
+    private double SumImg;
+
+    AddComplex(double real1, double img1,double real2, double img2) {
+        super(real1, img1);
+        SumReal = real1 + real2;
+        SumImg = img1 + img2;
+    }
+
+    void displaySum(){
+        System.out.print(SumReal + "+" + SumImg + "i");
+    }
+}
+
+public class threadsprac {
+    public static void main(String[] args) {
+        Complex c1 = new Complex(2,4);
+        Complex c2 = new Complex(1,5);
+        AddComplex sum = new AddComplex(c1.real, c1.img, c2.real,c2.img);
+
+        System.out.println("Complex Numbers");
+        c1.display();
+        c2.display();
+
+        System.out.println("Sum");
+        sum.displaySum();
+    }
+}
 
