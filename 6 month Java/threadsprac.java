@@ -216,7 +216,7 @@ class Complex{
     }
 
     void display(){
-        System.out.println(real + "+" + img + "i");
+        System.out.println(real + " + " + img + "i");
     }
 }
 
@@ -232,7 +232,7 @@ class AddComplex extends Complex{
     }
 
     void displaySum(){
-        System.out.print(SumReal + "+" + SumImg + "i");
+        System.out.print(SumReal + " + " + SumImg + "i");
     }
 }
 
