@@ -150,13 +150,11 @@ class threadsprac
 }
 */
 
+// ise code mai dono thread ek sath run hoga jis sai mix output aayaga //
+
+/* 
 class mydata 
 {
-  int p;
-  mydata(int m)
-  {
-    p=m;
-  }
   void display(String s)
   {
       for(int i=0;i<s.length(); i++)
@@ -172,7 +170,6 @@ class mythread1 extends Thread
   mythread1(mydata da)
   {
     d = da;
-    System.out.println(d);
   }
 
   public void run()
@@ -181,15 +178,103 @@ class mythread1 extends Thread
   }
 }
 
+class mythread2 extends Thread
+{
+  mydata d;
+
+  mythread2(mydata da)
+  {
+    d = da;
+  }
+
+  public void run()
+  {
+    d.display("Delhi bahut pasand haiiii ");
+  }
+}
 class threadsprac
 {
   public static void main(String[] args)
   {
-    mydata d1 = new mydata(5);
-    // mythread2 t2 = new mythread2(d1);
+    mydata d1 = new mydata();
+    mythread2 t2 = new mythread2(d1);
     mythread1 t1 = new mythread1(d1);
     t1.start();
-    // t2.start();
+    t2.start();
+  }
+}
+*/
+
+// syncronized ka use karna sai ab seprate output aayaag //
+
+/* 
+
+//ham syncronized aisa initiate kar sakta hai //
+class mydata 
+{
+ synchronized void display(String s)
+  {
+      for(int i=0;i<s.length(); i++)
+        {
+          System.out.print(s.charAt(i));
+        }
   }
 }
 
+// aur aisa bhi kar sakta hai output same hi hoga // 
+
+
+// class mydata 
+// {
+//  void display(String s)
+//   {
+//      synchronized(this)
+//      {
+//        for(int i=0;i<s.length(); i++)
+//         {
+//           System.out.print(s.charAt(i));
+//         }
+//      }
+//   }
+// }
+class mythread1 extends Thread
+{
+  mydata d;
+
+  mythread1(mydata da)
+  {
+    d = da;
+  }
+
+  public void run()
+  {
+    d.display("Bihar chandragupta ki rajdhani.// ");
+  }
+}
+
+class mythread2 extends Thread
+{
+  mydata d;
+
+  mythread2(mydata da)
+  {
+    d = da;
+  }
+
+  public void run()
+  {
+    d.display("Delhi bahut pasand haiiii. //");
+  }
+}
+class threadsprac
+{
+  public static void main(String[] args)
+  {
+    mydata d1 = new mydata();
+    mythread2 t2 = new mythread2(d1);
+    mythread1 t1 = new mythread1(d1);
+    t1.start();
+    t2.start();
+  }
+}
+*/
