@@ -150,16 +150,19 @@ class threadsprac
 }
 */
 
-
 class mydata 
 {
+  int p;
+  mydata(int m)
+  {
+    p=m;
+  }
   void display(String s)
   {
-    for(int i=0;i<s.length(); i++)
-    {
-      System.out.print(s.charAt(i));
-    }
-
+      for(int i=0;i<s.length(); i++)
+        {
+          System.out.print(s.charAt(i));
+        }
   }
 }
 class mythread1 extends Thread
@@ -169,24 +172,22 @@ class mythread1 extends Thread
   mythread1(mydata da)
   {
     d = da;
+    System.out.println(d);
   }
 
   public void run()
   {
-    d.display("Bihar ");
+    d.display("Bihar chandragupta ki rajdhani ");
   }
 }
-
-
 
 class threadsprac
 {
   public static void main(String[] args)
   {
-    mydata d1 = new mydata();
-    mydata d2 = new mydata();
+    mydata d1 = new mydata(5);
+    // mythread2 t2 = new mythread2(d1);
     mythread1 t1 = new mythread1(d1);
-    // mythread2 t2 = new mythread2(d2);
     t1.start();
     // t2.start();
   }
