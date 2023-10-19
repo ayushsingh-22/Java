@@ -278,3 +278,28 @@ class threadsprac
   }
 }
 */
+
+// ATM Machine challenge //
+
+class atm 
+{
+    void checkbalance( ) {};
+    void withdraw() {};
+}
+
+class customer
+{
+    atm a;
+    int amount; 
+    String name;
+
+    void useAtm( )
+    {
+      public void checkbalance(String name)
+      {
+        System.out.println(name + "! just check their balance."); 
+      }
+    }
+
+    
+}
