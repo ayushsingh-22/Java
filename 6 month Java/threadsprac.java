@@ -283,23 +283,32 @@ class threadsprac
 
 class atm 
 {
-    void checkbalance( ) {};
-    void withdraw() {};
+    void checkbalance(String name ) 
+    {
+        System.out.println(name + "! checked balance.");
+    }
+    void withdraw(String name, int amount) 
+    {
+        System.out.println(name + "withdraw money having amount " + amount + " rupees. ");
+    }
 }
 
 class customer
 {
     atm a;
-    int amount; 
-    String name;
+    int am; 
+    String na;
 
-    void useAtm( )
+    void useAtm(String name )
     {
-      public void checkbalance(String name)
-      {
-        System.out.println(name + "! just check their balance."); 
-      }
+        na = name;
+        a.checkbalance(na);
     }
 
-    
+    void useAtm( String name, int amount  )
+    {
+        na = name;
+        am = amount;
+        a.withdraw(na, am);
+    }  
 }
