@@ -293,22 +293,37 @@ class atm
     }
 }
 
-class customer
+class customer extends Thread
 {
-    atm a;
-    int am; 
-    String na;
+    atm at;
+    int amount; 
+    String name;
 
-    void useAtm(String name )
+    customer(String n,atm a,int amt)
     {
-        na = name;
-        a.checkbalance(na);
+        name=n;
+        at=a;
+        amount=amt;
     }
 
-    void useAtm( String name, int amount  )
+    public void run()
     {
-        na = name;
-        am = amount;
-        a.withdraw(na, am);
-    }  
+      at.checkbalance(name);
+      at.withdraw(name, amount);
+    }
+
+
+    
+}
+
+class threadsprac
+{
+  public static void main(String[] args) 
+  {
+     atm t = new atm();
+     customer c1 = new customer("Ayush", t, 10000);
+     customer c2 = new customer("Ram", t, 789562);
+      c1.start();
+      c2.start();
+  }
 }

@@ -8,7 +8,7 @@ public class p
         int x = sun.nextInt();
 
         System.out.println("Add = " +2+x);
-
+        sun.close();
 
     }
     
