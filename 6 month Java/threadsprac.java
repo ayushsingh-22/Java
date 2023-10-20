@@ -283,17 +283,18 @@ class threadsprac
 
 class atm 
 {
-    void checkbalance(String name ) 
+   synchronized void checkbalance(String name ) 
     {
         System.out.println(name + "! checked balance.");
     }
-    void withdraw(String name, int amount) 
+    synchronized void withdraw(String name, int amount) 
     {
-        System.out.println(name + "withdraw money having amount " + amount + " rupees. ");
+        System.out.println(name + " withdraw money having amount " + amount + " rupees. ");
     }
 }
 
 class customer extends Thread
+
 {
     atm at;
     int amount; 
@@ -311,19 +312,17 @@ class customer extends Thread
       at.checkbalance(name);
       at.withdraw(name, amount);
     }
-
-
-    
 }
 
 class threadsprac
+
 {
   public static void main(String[] args) 
   {
-     atm t = new atm();
-     customer c1 = new customer("Ayush", t, 10000);
-     customer c2 = new customer("Ram", t, 789562);
-      c1.start();
-      c2.start();
+    atm t = new atm();
+    customer c1 = new customer("Ayush", t, 10000);
+    customer c2 = new customer("Ram", t, 789562);
+    c1.start();
+    c2.start();
   }
 }
