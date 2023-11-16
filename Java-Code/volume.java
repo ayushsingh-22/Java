@@ -1,23 +1,52 @@
-import java.util.*;
-public class volume 
+ import java.lang.Math;
+
+abstract class shape
 {
-    public static void main(String arg[])
+    public float length;
+    public float breadth; 
+    public float radius; 
+    
+    abstract double area();
+    abstract double perimeter();
+    
+}
+
+class circle extends shape
+{
+    double area()
     {
-        int l,b,h;
-        float area,volume;
-
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter length = ");
-        l=sc.nextInt();
-        System.out.print("Enter breath = ");
-        b= sc.nextInt();
-        System.out.print("Enter height = ");
-        h = sc.nextInt();
-
-        area=2*((l*b)+(b*h)+(h*l));
-        volume= l*b*h;
-        System.out.println("Area of cuboid = "+area);
-        System.out.println("Volume of cuboid = "+volume);
-        sc.close();
+        
+        return  (Math.PI*Math.PI*radius);
     }
+
+    double perimeter()
+    {
+        return (2*Math.PI*radius);
     }
+}
+
+class rectangle extends shape
+{
+    double area()
+    {
+        return (length*breadth);
+       
+    }
+
+    double perimeter()
+    {
+        return (2*(length*breadth));
+    }
+}
+
+class volume
+{
+    public static void main(String[] args) 
+    {
+        circle c=new circle();
+        c.radius = 3;
+        System.out.println("Area of circle = "+ c.area());
+        
+    }
+}
+
