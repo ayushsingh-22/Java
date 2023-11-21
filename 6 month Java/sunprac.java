@@ -15,19 +15,17 @@ class detail extends Thread
 {
     String name;
     int amount;
-    atm aa;
-    
-    detail(String n,atm ai, int a)
+    static atm am = new atm();
+    detail(String n, int a)
     {
         name = n;
         amount = a;
-        aa = ai;
     }
 
     public void useATM()
     { 
-        aa.checkBalance(name);
-        aa.withdrawl(name, amount);
+        am.checkBalance(name);
+        am.withdrawl(name, amount);
     }
     public void run()
     {
@@ -40,10 +38,9 @@ public class sunprac
 {
     public static void main(String args[])
     {
-        atm am = new atm();
-        detail dt1 = new detail("ayush",am, 2500);
+        detail dt1 = new detail("ayush", 2500);
         dt1.start();
-        detail dt2 = new detail("Ramu",am, 500);
+        detail dt2 = new detail("Ravan", 500);
         dt2.start();
     }
 }
