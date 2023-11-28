@@ -32,7 +32,7 @@ interface fun
 
 class gun 
 {
-    public  void mydemo()
+    public static void mydemo()
     {
         System.out.println("Printing in non-satatic method....... Print ");
     }
@@ -41,8 +41,8 @@ class gun
 public class mtdrefrence 
 {
     public static void main(String[] args) {
-        gun g=new gun();
-        fun f = g::mydemo;
+        // gun g=new gun();
+        fun f = gun::mydemo;
         f.demo();
         System.out.println();
     }
