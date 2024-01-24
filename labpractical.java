@@ -80,14 +80,14 @@ public class labpractical {
     public static void main(String[] args) 
     {
         // Creating an instance of the Person class
-        labpractical person = new labpractical("John Doe", 25);
+        labpractical person = new labpractical("John", 25);
 
         // Using the getter methods to retrieve values
         System.out.println("Name: " + person.getName());
         System.out.println("Age: " + person.getAge());
 
         // Using the setter methods to modify values
-        person.setName("Jane Doe");
+        person.setName("Funny John");
         person.setAge(30);
 
         // Displaying the modified values
