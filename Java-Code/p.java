@@ -7,7 +7,7 @@ public class p
         System.out.print("Enter value of x = ");
         int x = sun.nextInt();
 
-        System.out.println("Add = " +2+x);
+        System.out.println("Add = " +(2+x));
         sun.close();
 
     }
