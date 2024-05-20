@@ -119,7 +119,7 @@ public class loopprac
 
         // palindrome or not
 
-    /*     
+        
         System.out.print("Enter number = ");
         int pal=sc.nextInt();
         int ran=pal;
@@ -138,7 +138,7 @@ public class loopprac
         else
         {System.out.println("Not Palindrome Number.");}
 
-    */
+    
 
         // display no. in words with tailling zero if present
 
@@ -209,26 +209,26 @@ public class loopprac
 
         // print star pyramid
 
-        int ns = 4;  // number of spaces in the first line
-        int noss = 1; // number of stars in the first line
+        // int ns = 4;  // number of spaces in the first line
+        // int noss = 1; // number of stars in the first line
         
-        for (int i = 1; i <= 5; i++) 
-        {
-            // Print spaces
-            for (int j = 1; j <= ns; j++) 
-            {
-                System.out.print(" ");
-            }
-            ns--;
+        // for (int i = 1; i <= 5; i++) 
+        // {
+        //     // Print spaces
+        //     for (int j = 1; j <= ns; j++) 
+        //     {
+        //         System.out.print(" ");
+        //     }
+        //     ns--;
             
-            // Print stars
-            for (int k = 1; k <= noss; k++) 
-            {
-                System.out.print("*");
-            }
-            noss = noss + 2;
-            System.out.println();  // Move to the next line after printing spaces and stars
-        }
+        //     // Print stars
+        //     for (int k = 1; k <= noss; k++) 
+        //     {
+        //         System.out.print("*");
+        //     }
+        //     noss = noss + 2;
+        //     System.out.println();  // Move to the next line after printing spaces and stars
+        // }
         sc.close();
     }
 }
