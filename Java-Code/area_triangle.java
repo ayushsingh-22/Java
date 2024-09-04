@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class area_triangle {
 
     public static void main(String arg[])

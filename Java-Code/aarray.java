@@ -1,20 +1,19 @@
-import java.util.*;
 public class aarray 
 {
     public static void main(String[] args) 
     {
-        // int a[] = {14,9,7,8,12,13,18,25,26,15};
-        // int sum = 0;
+        int a[] = {14,9,7,8,12,13,18,25,26,15};
+        int sum = 0;
 
-        // for(int i=0;i<=a.length-1;i++)
-        // {
-        //     sum = sum + a[i];
-        // }
-        // System.out.println("Sum of array element = "+sum);
+        for(int i=0;i<=a.length-1;i++)
+        {
+            sum = sum + a[i];
+        }
+        System.out.println("Sum of array element = "+sum);
 
 // ----------------------------------------------------------------------------------------------- // 
         
-        Scanner sc=new Scanner(System.in);
+        // Scanner sc=new Scanner(System.in);
     //     System.out.print("Enter key:");
     //     int key=sc.nextInt();
     //     int i;
@@ -127,24 +126,24 @@ public class aarray
 
 //--------------------------------/* Reverse copying an array */-----------------------------------------//
 
-        int p[]=new int[9];
-        int m[]={2,4,10,11,5,7,15,46,3};
-        System.out.print("Input array = ");
-        for (int x:m)
-        {System.out.print(x+",");}
+        // int p[]=new int[9];
+        // int m[]={2,4,10,11,5,7,15,46,3};
+        // System.out.print("Input array = ");
+        // for (int x:m)
+        // {System.out.print(x+",");}
 
-        int i,l=0;
-         for(i=8;i>=0;i--)
-        {
-            // int temp = m[l];
-            p[l]=m[i];
-            // m[i]=temp;
-            l++;          
-        }
-        System.out.println("");
-        System.out.print("New array = ");
-        for (int x:p)
-        {System.out.print(x+",");}
+        // int i,l=0;
+        //  for(i=8;i>=0;i--)
+        // {
+        //     // int temp = m[l];
+        //     p[l]=m[i];
+        //     // m[i]=temp;
+        //     l++;          
+        // }
+        // System.out.println("");
+        // System.out.print("New array = ");
+        // for (int x:p)
+        // {System.out.print(x+",");}
 
 // --------------------------------------------------------------------------------------- //
         // int m[]={2,4,10,11,5,7,15,46,3};        
@@ -170,7 +169,7 @@ public class aarray
         // System.out.println("");
         // System.out.print("Length of array 'm' = "+m.length);
             
-    sc.close();
+    // sc.close();
 
     }
     
