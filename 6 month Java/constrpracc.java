@@ -1,7 +1,3 @@
-import java.util.*;
-
-
-// find area of rectangle using constructor.
 
 
 class rectangle 
@@ -53,7 +49,7 @@ public class constrpracc
 {
     public static void main(String[] args) 
     {
-        rectangle rc = new rectangle(5,6);
+        rectangle rc = new rectangle();
         // rc.setLength(5);
         // rc.setWidth(6);
         System.out.println("Area of rectangle = "+ rc.area() );
