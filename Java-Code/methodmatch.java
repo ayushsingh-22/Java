@@ -3,10 +3,8 @@ public class methodmatch
 {
     static int max(int x,int y)
     {   
-        if (x>y)
-        return x;
-        else 
-        return y;
+        return (x>y)? x:y;
+        
     }
     public static void main(String arg[])
     {
@@ -18,6 +16,7 @@ public class methodmatch
         b=sc.nextInt();
         int c= max(a, b);
         System.out.println("Max = "+c);
+        sc.close();
     }
     
 }
