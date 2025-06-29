@@ -33,7 +33,8 @@ public class loopques
 
 //  ===========================================================================================================  //
 
-        int n,fact=1;
+        int n;
+        long fact=1;
         System.out.print("Enter value of 'n' = ");
         n = sc.nextInt();
 
